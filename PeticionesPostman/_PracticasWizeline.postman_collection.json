@@ -52,7 +52,7 @@
 			"name": "sample/delete/json",
 			"request": {
 				"auth": {
-					"type": "bearer"
+					"type": "noauth"
 				},
 				"method": "DELETE",
 				"header": [],
@@ -112,6 +112,190 @@
 						"sample",
 						"head",
 						"json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "github.com",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "HEAD",
+				"header": [
+					{
+						"key": "authority",
+						"value": "github.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "es-ES,es;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "_octo=GH1.1.279760229.1656978164; _device_id=279bbf398c39a4712eee7c018aec65ca; user_session=h4ZcC1bD95pE31IrK47xOxxFOVWxH0lMh5JSFRHxRB5zT5Hd; __Host-user_session_same_site=h4ZcC1bD95pE31IrK47xOxxFOVWxH0lMh5JSFRHxRB5zT5Hd; logged_in=yes; dotcom_user=Khryz; color_mode=%7B%22color_mode%22%3A%22auto%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D; preferred_color_mode=dark; tz=America%2FMexico_City; has_recent_activity=1; _gh_sess=cUmx%2F2EYEzoA1jPccosco2WEcW6XBmVPF3bHSeFmhDCizsHyg%2FeIeEMi8xTTcT6WI92w57M%2BJg0YPT1DyY32nYV047WCJXhEgK6%2BfZj9aQVb3XpSp1BDCAIgM3KDoT2pc2T9BGxMP8m2MFCdp891CxIYDZ6X4QCaSOn4CQrv5DCQ53xcEcnKGHsf9wAGA%2BoF4%2FN3S%2BYXjlDgpWc3xJ%2Ft4XE6bbOVPlSL%2FLjmsHRUUAiDKIY6V29eAZzKinSoj25n6I3FgEnveEuP7frR8cpdg5PqS474YJ1WSp4oxacYU6f4gpbSwMnD5Pquz1wa1sL2TFJAh9%2BnMzqjaaHdwZS03DxQu4nWG4OFNSH%2FgtRloerb8BxrXXQoCQ6GrPtOmkwptUcynsA4StayoDE41EaVB5OLnQjEtL9gYM1QDlZtZDqKzQS27ryXXR%2FTTsmwpN6n0fzlbdyvDai1iyLjY2MNqxolJMgHcV%2Fl--xiT82k9KErD397aQ--1o90oRAEK3qQdUwxdQ7hqw%3D%3D"
+					},
+					{
+						"key": "origin",
+						"value": "https://github.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://github.com/Khryz/practicas-wizeline"
+					},
+					{
+						"key": "scoped-csrf-token",
+						"value": "CmtKYDidlp8PbgzAyuyygkmodYcRsFynYJuHSvYRmOcIDS-f7bzEQL_x9zE2OE_Ev90Ig84-DTguqlFnbq1r3g"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:escline/InstallCert",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:aidanwhiteley/books",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:JodaOrg/joda-time",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:settings/profile",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:settings/admin",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:settings/security",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:settings/keys",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:wizelineacademy/BAZJAVA12022",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:Khryz/BAZJAVA12022",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:settings/repositories",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:Khryz/EjemploRepoNuevo",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:Khryz/HSBCClientes",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:mariocruzgonzalez/BAZJAVA12022",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:awsdocs/aws-doc-sdk-examples",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:rancher-sandbox/rancher-desktop",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:paulodhiambo/spring-amazon",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:Khryz/practicas-wizeline",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:typicode/json-server",
+							"type": "text"
+						},
+						{
+							"key": "variables[pageViews][]",
+							"value": "repository:postmanlabs/postman-app-support",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://github.com/_graphql/GetSuggestedNavigationDestinations",
+					"protocol": "https",
+					"host": [
+						"github",
+						"com"
+					],
+					"path": [
+						"_graphql",
+						"GetSuggestedNavigationDestinations"
 					]
 				}
 			},
