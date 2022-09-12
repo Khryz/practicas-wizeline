@@ -49,42 +49,69 @@
 			"response": []
 		},
 		{
-			"name": "jsonplaceholder",
+			"name": "sample/delete/json",
 			"request": {
-				"method": "PUT",
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/posts/1",
+					"raw": "https://reqbin.com/sample/delete/json",
 					"protocol": "https",
 					"host": [
-						"jsonplaceholder",
-						"typicode",
+						"reqbin",
 						"com"
 					],
 					"path": [
-						"posts",
-						"1"
+						"sample",
+						"delete",
+						"json"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "jsonplaceholder",
+			"name": "reqbin.com/echo/put/json",
 			"request": {
-				"method": "DELETE",
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/posts/1",
+					"raw": "https://reqbin.com/echo/put/json",
 					"protocol": "https",
 					"host": [
-						"jsonplaceholder",
-						"typicode",
+						"reqbin",
 						"com"
 					],
 					"path": [
-						"posts",
-						"1"
+						"echo",
+						"put",
+						"json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reqbin.com/sample/head/json",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "https://reqbin.com/sample/head/json",
+					"protocol": "https",
+					"host": [
+						"reqbin",
+						"com"
+					],
+					"path": [
+						"sample",
+						"head",
+						"json"
 					]
 				}
 			},
